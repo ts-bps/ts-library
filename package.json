@@ -6,7 +6,7 @@
   "scripts": {
     "start": "npm run test",
     "build":
-      "rm -rf ./build/ && rm -rf ./dist/ && tsc && microbundle build/main.js",
+      "rm -rf ./build/ && rm -rf ./dist/ && tsc && microbundle build/index.js && cp ./build/index.d.ts ./dist/",
     "test": "jest --watch --coverage"
   },
   "repository": {
