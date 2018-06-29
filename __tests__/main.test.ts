@@ -1,4 +1,4 @@
-import { sum } from "../src/main";
+import { sum } from "../src/index";
 
 describe("sum", () => {
   test("works", () => {
