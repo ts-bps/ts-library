@@ -4,7 +4,6 @@
     "target": "ES2015",
     "module": "commonjs",
     "lib": ["es2018"],
-    "allowJs": true,
     "declaration": true,
     "outDir": "./build/",
     "rootDir": "./src/",
