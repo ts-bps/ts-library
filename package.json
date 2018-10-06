@@ -1,16 +1,19 @@
 {
   "name": "ts-library",
-  "version": "0.1.4",
+  "version": "0.1.0",
   "main": "dist/index.js",
   "module": "dist/index.m.js",
   "types": "dist/index.d.ts",
   "scripts": {
     "start": "npm run test",
     "build": "rm -rf ./dist/ && rollup -c",
-    "test": "jest --watch --coverage"
+    "test:i": "jest --watch --coverage",
+    "test": "jest --coverage",
+    "prepublish": "npm run test && npm run build"
   },
   "husky": {
-    "pre-commit": "prettier src/* --write"
+    "pre-commit": "prettier src/* --write",
+    "pre-push": "npm run test"
   },
   "repository": {
     "type": "git",
