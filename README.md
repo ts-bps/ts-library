@@ -1,10 +1,30 @@
 ## TypeScript Library
 
-```
-git clone https://github.com/ts-bps/ts-library my-ts-library
-cd my-ts-library
-rm -rf .git
-yarn
-yarn start
+## The Problem
+
+## This Solution
+
+## Install
+
+```sh
+  yarn add library
 ```
 
+## Usage
+
+```typescript
+import { sum } from "sum";
+
+sum(1, 2); // 3
+```
+
+## API
+
+### Input :
+
+- a: number (required)
+- b: number (required)
+
+### Output :
+
+c : number
